@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ED Ciencias</title>
+<style>
+    /* Reset default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Body styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(21, 50, 68);
+        color: rgb(255, 255, 255);
+        line-height: 1.6;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+    
+    /* Header styles */
+    header {
+        background-color: rgb(255, 203, 0);
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        position: relative; /* Relative positioning for the navbar icon */
+    }
+    
+    /* Navbar icon styles */
+    .navbar-icon {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 30px;
+        color: rgb(21, 50, 68);
+    }
+    
+    /* Main section container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto; /* Center the container */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(255, 203, 0, 0.5);
+    }
+    
+    /* Article styles */
+    .article {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .article h2 {
+        color: rgb(255, 203, 0);
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .article:hover h2 {
+        transform: scale(1.05); /* Scale up on hover */
+        opacity: 0.8; /* Reduce opacity on hover */
+    }
+    
+    .article p {
+        color: rgb(255, 255, 255);
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+    
+    /* Neon effect for headings */
+    .neon-text {
+        color: #fff;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(141, 226, 214, 0.8), 0 0 35px rgba(141, 226, 214, 0.6), 0 0 40px rgba(141, 226, 214, 0.4), 0 0 50px rgba(141, 226, 214, 0.2);
+    }
+    
+    /* Button styles */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(255, 203, 0);
+        color: rgb(21, 50, 68);
+        text-decoration: none;
+        border-radius: 25px; /* Rounded border */
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(21, 50, 68);
+    }
+    
+    /* Sidebar navigation */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(21, 50, 68);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: rgb(255, 203, 0);
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 2.5em;
+        margin-left: 50px;
+    }
+    
+    /* Main content padding to avoid overlap with sidebar */
+    .main-content {
+        margin-left: 0; /* Reset margin-left for main content */
+        transition: margin-left 0.5s;
+        padding: 50px;
+    }
+    
+    /* Media query for responsiveness */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+</head>
+<body>
+<header>
+    <span class="navbar-icon" onclick="openNav()">&#9776;</span>
+    <h1 class="neon-text">ED Ciencias</h1>
+</header>
+
+<div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Modelo</a>
+    <a href="#">Projectos</a>
+    <a href="#">Participar</a>
+</div>
+
+<div class="container main-content">
+    <div class="article">
+        <div class="image-container">
+            <img src="C:\Users\mdm27\Downloads\Firefly aula futurista, neo industrial, iluminación azul claro, pantallas con código, herramientas,  (1).jpg" width=600 height=400 alt="Project Image 1">
+            
+        </div>
+        <h2>Projects from Inicial</h2>
+        <p>Explore innovative projects from elementary schools utilizing robotics kits, fostering creativity and technical skills among young students.</p>
+        <a href="#" class="btn">Buueena!</a>
+        <a href="#" class="btn">Remixar</a>
+    </div>
+    <div class="article">
+       <div class="image-container">
+            <img src="C:\Users\mdm27\Downloads\Firefly aula futurista, neo industrial, iluminación azul claro, pantallas con código, herramientas,  (2).jpg" width=600 height=400 alt="Project Image 1">
+            
+        </div>
+        <h2>Proyectos de Primaria</h2>
+        <p>Discover how middle school students are pushing the boundaries of robotics education with hands-on projects and experiments.</p>
+        <a href="#" class="btn">Buueena!</a>
+        <a href="#" class="btn">Remixar</a>
+    </div>
+    <div class="article">
+       <div class="image-container">
+            <img src="C:\Users\mdm27\Downloads\Firefly aula futurista, neo industrial, iluminación azul claro, pantallas con código, herramientas, .jpg" width=600 height=400 alt="Project Image 1">
+            
+        </div>
+        <h2>Proyectos de Secundaria</h2>
+        <p>See the advanced robotics projects developed by high school students, demonstrating sophisticated engineering and programming skills.</p>
+        <a href="#" class="btn">Buueena!</a>
+        <a href="#" class="btn">Remixar</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 ED Ciencias. All rights reserved.</p>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementsByClassName("main-content")[0].style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementsByClassName("main-content")[0].style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
